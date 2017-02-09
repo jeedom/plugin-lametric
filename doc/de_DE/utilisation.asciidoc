@@ -1,16 +1,16 @@
-== Utilisation du plugin
+== Benutzung des Plugins
 
-2 commandes sont automatiquement créées lors de l'ajout d'un équipement :
+2 Befehle werden automatisch erstellt, wenn Sie ein Gerät hinzufügen :
 
-* *Message* => Permet l'envoi de messages
-* *Vider* => Permet de remettre à vide l'affichage ("JEEDOM" s'inscrit alors)
+* *Nachricht* => zum versenden von Nachrichten
+* *Leer* => ermöglicht die Anzeige auf Leer zurückzusetzen(von "JEEDOM" eingetragen)
 
-La commande de type message contient 2 champs :
-* *ID Icone* : Correspond au numéro de l'icône souhaitée (Ne pas mettre le # ; liste des icones disponible ici : https://developer.lametric.com/icons)
-* *Texte* : Correspond au texte que l'on souhaite afficher
+Der Befehl des Nachrichten Typs enthält 2 Felder :
+* *Symbol ID* : Ist die Nummer des gewünschten Symbols (nicht das # Zeichen eingeben ; die Liste der verfügbaren Symbole ist hier : https://developer.lametric.com/icons)
+* *Text* : Ist der Text, den Sie anzeigen möchten
 
-Il est possible d'envoyer plus messages en un seul envoi en séparant les icones et les textes par le caractère : *|*
+Es ist möglich, mehrere Nachrichten in nur einr Sendung zu senden, indem man die Symbole und die Texte durch einen senkrechten Strich trennt : *|*
 
-Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi :
+Hier ist ein Beispiel eines Szenario, dass 4 verschiedene Informationen in einer einzigen Sendung versendet :
 
 image::../images/lametric6.png[]

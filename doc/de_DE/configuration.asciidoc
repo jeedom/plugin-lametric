@@ -1,20 +1,26 @@
-== Configuration du plugin
+== Plugin Konfiguration
 
-Une fois le plugin installé, il est nécessaire de créer une "indicator App" sur le site LaMetric :
+Nach der Installation des Plugins, ist es notwendig, eine "Indikator App" auf der LaMetric Webseite zu erstellen :
 
-* 1. Se rendre à l'adresse : https://developer.lametric.com
-* 2. Créer une "INDICATOR APP" :
+* 1. Auf die Adresse gehen : https://developer.lametric.com
+* 2. Erstellen Sie eine "INDICATOR APP" :
+
 image::../images/lametric1.png[]
-* 3. Configurer une icone, un nom et sélectionner Push dans "Communication type" :
-image::../images/lametric2.png[]
-* 4. Donner un nom et une description à votre app et cocher "Private app" puis cliquer sur "Save" :
-image::../images/lametric3.png[]
-* 5. Publier l'application puis installer là sur votre LaMetric grâce à l'application mobile.
 
-Une fois l'application publiée, vous disposez des informations essentielles pour la configuration du plugin.
+* 3. Konfigurieren Sie ein Symbol, einen Namen und wählen Sie die "Kommunikationsart" Push aus : 
+
+image::../images/lametric2.png[]
+
+* 4. Geben Sie einen Namen und eine Beschreibung für Ihre Anwendung ein und kreuzen "Private app" an, danach klicken Sie auf "Speichern" :
+
+image::../images/lametric3.png[]
+
+* 5. Die Anwendung veröffentlichen dann von dort auf Ihrem LaMetric dank der beweglichen Anwendung installieren.
+
+Ist die Anwendung einmal veröffentlichte, verfügen Sie über die wesentlichen Informationen für die Konfiguration des Plugins.
 
 image::../images/lametric4.png[]
 
-Vous pouvez ensuite créer un nouvel équipement dans Jeedom et renseigner les champs demandés :
+Sie können dann ein neues Gerät in Jeedom erstellen und die erforderlichen Felder ausfüllen :
 
 image::../images/lametric5.png[]
