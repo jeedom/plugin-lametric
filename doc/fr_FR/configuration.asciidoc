@@ -15,7 +15,7 @@ image::../images/lametric2.png[]
 
 image::../images/lametric3.png[]
 
-* 5. Publier l'application puis installer là sur votre LaMetric grâce à l'application mobile.
+* 5. Publier l'application puis installer-la sur votre LaMetric grâce à l'application mobile.
 
 Une fois l'application publiée, vous disposez des informations essentielles pour la configuration du plugin.
 
