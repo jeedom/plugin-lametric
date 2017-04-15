@@ -6,10 +6,10 @@
 * *Leer* => ermöglicht die Anzeige auf Leer zurückzusetzen(von "JEEDOM" eingetragen)
 
 Der Befehl des Nachrichten Typs enthält 2 Felder :
-* *Symbol ID* : Ist die Nummer des gewünschten Symbols (nicht das # Zeichen eingeben ; die Liste der verfügbaren Symbole ist hier : https://developer.lametric.com/icons)
+* *ID Icone* : Correspond au numéro de l'icône souhaitée (Ne pas mettre le # ; liste des icônes disponibles ici : https://developer.lametric.com/icons)
 * *Text* : Ist der Text, den Sie anzeigen möchten
 
-Es ist möglich, mehrere Nachrichten in nur einr Sendung zu senden, indem man die Symbole und die Texte durch einen senkrechten Strich trennt : *|*
+Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère : *|*
 
 Hier ist ein Beispiel eines Szenario, dass 4 verschiedene Informationen in einer einzigen Sendung versendet :
 

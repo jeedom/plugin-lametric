@@ -6,10 +6,10 @@
 * *Vider* => Permet de remettre à vide l'affichage ("JEEDOM" s'inscrit alors)
 
 La commande de type message contient 2 champs :
-* *ID Icone* : Correspond au numéro de l'icône souhaitée (Ne pas mettre le # ; liste des icones disponible ici : https://developer.lametric.com/icons)
+* *ID Icone* : Correspond au numéro de l'icône souhaitée (Ne pas mettre le # ; liste des icônes disponibles ici : https://developer.lametric.com/icons)
 * *Texte* : Correspond au texte que l'on souhaite afficher
 
-Il est possible d'envoyer plus messages en un seul envoi en séparant les icones et les textes par le caractère : *|*
+Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère : *|*
 
 Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi :
 
