@@ -1,7 +1,0 @@
-= LaMetric
-
-Plugin zum Anzeigen von Meldungen / Informationen von LaMetric.
-
-include::configuration.asciidoc[]
-
-include::utilisation.asciidoc[]
