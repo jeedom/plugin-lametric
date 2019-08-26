@@ -144,6 +144,17 @@ class Lametric2
         }  
     }
 
+     /**
+    * Set local IP for API calls
+    * 
+    * @return   void
+    */
+    public function generatePushUrl()
+    {
+        return "http://".$this->_localIp.":8080/api/v2/device/notifications";
+    }
+
+
     /**
     * Generate global frames array
     * 
@@ -193,7 +204,7 @@ class Lametric2
 
     public function push($text = null, $icon = null)
     {
-        if(empty($this->_pushUrl) || empty($this->_token)) {
+        if(empty($this.generatePushUrl()) || empty($this->_token)) {
             throw new LametricException('Config needs to be set.');
         } elseif(empty($this->_frames) && is_null($text)) {
              throw new LametricException('Empty frames array.');
@@ -221,7 +232,7 @@ class Lametric2
         }
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->_pushUrl);
+        curl_setopt($ch, CURLOPT_URL, $this->$this.generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
