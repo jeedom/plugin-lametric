@@ -165,11 +165,12 @@ class Lametric2
     {
         if(empty($this->_frames)) throw new LametricException('There is no data to generate.');
 
-        $frames = array('frames'=>array());
+        $frames = array();
 
        foreach($this->_frames as $key=>$frame) {
-            array_push($frames['frames'], array('index'=>$key, 'text'=>$frame[0], 'icon'=>empty($frame[1]) ? $this->_icon : 'i'.$frame[1]));
+            array_push($frames, array('text'=>$frame[0], 'icon'=>empty($frame[1]) ? $this->_icon : $frame[1]));
        }
+       throw new LametricException('toto .'.json_encode($frames));
        $data = new stdClass();
        $data->model = new stdClass();
        $data->model->frames = $frames;
@@ -183,7 +184,7 @@ class Lametric2
             $data->sound->category = "notifications";
             $data->sound->id = $this->_sound;
         }
-
+     
        return (!$json) ? $data : json_encode($data);
     }
 
