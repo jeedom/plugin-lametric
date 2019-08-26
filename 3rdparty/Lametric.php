@@ -1,13 +1,12 @@
 <?php
 class Lametric2
 {
-
     /**
-     * The URL data is pushed to LaMetric's server
+     * The local Ip to LaMetric
      *
      * @var string
      */
-	private $_pushUrl = null;
+	private $_localIp = null;
 
     /**
      * Access token for application
@@ -23,6 +22,13 @@ class Lametric2
      */
 	private $_icon = null;
 
+    /**
+     * Sound number from LaMetric
+     *
+     * @var string
+     */
+    private $_sound = null;
+    
     /**
      * A list of HTTP headers required for authorization
      * 
@@ -51,7 +57,7 @@ class Lametric2
  
             $this->_http_headers = array(
                 'Accept: application/json',
-                'X-Access-Token: '.$this->_token,
+                'Authorization: Basic '.$this->_token,
                 'Pragma: no-cache',
             );
 
@@ -66,18 +72,31 @@ class Lametric2
     */
     public function setIcon($code)
     {
-        $this->_icon = 'i'. $code;
+        $this->_icon = $code;
     }
 
+    
     /**
-    * Set push URL for API calls
+    * Set sound for notification
     * 
-    * @param    string  $pushUrl    String with pushUrl for Indicator App
+    * @param    integer  $code    Integer with sound name from gallery
     * @return   void
     */
-    public function setPushURL($pushUrl)
+    public function setSound($code)
     {
-        $this->_pushUrl = $pushUrl;
+        $this->_sound = $code;
+    }
+
+
+    /**
+    * Set local IP for API calls
+    * 
+    * @param    string  $localIp    String with localIp of the LaMetric
+    * @return   void
+    */
+    public function setLocalIp($localIp)
+    {
+        $this->_localIp = $localIp;
     }
 
     /**
@@ -140,8 +159,17 @@ class Lametric2
        foreach($this->_frames as $key=>$frame) {
             array_push($frames['frames'], array('index'=>$key, 'text'=>$frame[0], 'icon'=>empty($frame[1]) ? $this->_icon : 'i'.$frame[1]));
        }
+       $data->model->frames = $frames;
 
-       return (!$json) ? $frames : json_encode($frames);
+        if(in_array(array("alarm1","alarm2","alarm3","alarm4","alarm5","alarm6","alarm7","alarm8","alarm9","alarm10","alarm11","alarm12","alarm13"),$this->_sound)) {
+            $data->sound->category = "alarms";
+            $data->sound->id = $this->_sound;
+        } elseif (!empty($this->_sound)){
+            $data->sound->category = "notifications";
+            $data->sound->id = $this->_sound;
+        }
+
+       return (!$json) ? $data : json_encode($data);
     }
 
     /**

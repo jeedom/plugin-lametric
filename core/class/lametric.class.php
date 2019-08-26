@@ -37,7 +37,8 @@ class lametric extends eqLogic {
 		$lametricCmd->setType('action');
 		$lametricCmd->setSubType('message');
 		$lametricCmd->setDisplay('title_placeholder', __('ID de l\'icone', __FILE__));
-        $lametricCmd->setDisplay('message_placeholder', __('Texte', __FILE__));
+		$lametricCmd->setDisplay('message_placeholder', __('Texte', __FILE__));
+		$lametricCmd->setDisplay('sound_placeholder', __('ID du son', __FILE__));
 		$lametricCmd->setIsVisible(true);
 		$lametricCmd->save();
 		
@@ -72,7 +73,7 @@ class lametricCmd extends cmd {
     	log::add('lametric', 'info', 'Debut de l action');	
 		$lametricEq = $this->getEqLogic();
     	$lametric2 = new Lametric2(array(
-		    'pushURL' => $lametricEq->getConfiguration('pushurl'),
+			'localIP' => $lametricEq->getConfiguration('localip'),
 		    'token' => $lametricEq->getConfiguration('token'),
 		));
     	if ($this->type == 'action' && isset($_options['message'])) {
@@ -86,7 +87,8 @@ class lametricCmd extends cmd {
 				}
     		}else{
     			$lametric2->addFrame($_options['message'], $_options['title']);		
-    		}
+			}
+			$lametric2->setSound($_options['sound']);	
 			$lametric2->push();
 			return true;
 		}else{

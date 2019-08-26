@@ -108,6 +108,12 @@ sendVarToJS('eqType', 'lametric');
 			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pushurl" placeholder="Push URL"/>
 			            </div>
 			          </div>
+					  <div class="form-group">
+			            <label class="col-sm-3 control-label">{{LOCAL IP}}</label>
+			            <div class="col-sm-5">
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="localip" placeholder="Local IP"/>
+			            </div>
+			          </div>
 			          <div class="form-group">
 			            <label class="col-sm-3 control-label">{{Token Access}}</label>
 			            <div class="col-sm-5">
