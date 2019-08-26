@@ -174,13 +174,16 @@ class Lametric2
        $data->model->frames = $frames;
 
         if(in_array(array("alarm1","alarm2","alarm3","alarm4","alarm5","alarm6","alarm7","alarm8","alarm9","alarm10","alarm11","alarm12","alarm13"),$this->_sound)) {
-            $data->sound = new stdClass();
-            $data->sound->category = "alarms";
-            $data->sound->id = $this->_sound;
+            $sound = new stdClass();
+            $sound->category = "alarms";
+            $sound->id = $this->_sound;
+            $data->model->sound = $sound;
+            
         } elseif (!empty($this->_sound)){
-            $data->sound = new stdClass();
-            $data->sound->category = "notifications";
-            $data->sound->id = $this->_sound;
+            $sound = new stdClass();
+            $sound->category = "notifications";
+            $sound->id = $this->_sound;
+            $data->model->sound = $sound;
         }
      
        return (!$json) ? $data : json_encode($data);

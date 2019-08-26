@@ -79,10 +79,12 @@ class lametricCmd extends cmd {
     		$messages = explode('|', $_options['message']);
     		if(count($messages > 1)){
 				$titles = explode('|', $_options['title']);
+				$i = 0;
 				if(count($titles) > count($messages)){
 					$lametric2->setSound($titles[0]);	
+					$i = 1;
 				}
-    			$i = 1;
+    			
     			foreach($messages as $message){
 					$lametric2->addFrame($message,$titles[$i]);
 					$i++;	
