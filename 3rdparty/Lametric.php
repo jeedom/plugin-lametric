@@ -230,7 +230,7 @@ class Lametric2
                         array(array($this->_frames)))); 
             }          
         }
-
+        throw new LametricException('data: '.$data_string);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $this->generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
