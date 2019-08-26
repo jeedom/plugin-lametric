@@ -232,7 +232,7 @@ class Lametric2
         }
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->$this.generatePushUrl());
+        curl_setopt($ch, CURLOPT_URL, $this->generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
