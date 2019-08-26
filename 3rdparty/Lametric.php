@@ -221,19 +221,13 @@ class Lametric2
         } elseif(is_null($text)) { 
             $data_string = json_encode($this->generateData());
         } else {
-            
             if(empty($this->_frames)) {
-                $data_string = json_encode(array(
-                        'frames'=>
-                        array(
-                            array('index'=>0,
-                                'text'=>$text,
-                                'icon'=>(is_null($icon)) ? $this->_icon : $icon,
-                            ))));
+                $this->addFrame($text,$icon);
+                $data_string = json_encode($this->generateData());
+                $this->clearFrames();
             } else {
-                $data_string = json_encode(array(
-                        'frames'=>
-                        array(array($this->_frames)))); 
+                $data_string = json_encode($this->generateData());
+                $this->clearFrames();
             }          
         }
      
