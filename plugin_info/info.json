@@ -1,6 +1,6 @@
 {
-	"id" : "lametric-ext",
-	"name" : "LaMetric-ext",
+	"id" : "lametric",
+	"name" : "LaMetric",
 	"description" : "Plugin permettant d'afficher des notifications sur LaMetric Time",
 	"licence" : "AGPL",
 	"author" : "Jeedom SAS",
