@@ -170,12 +170,16 @@ class Lametric2
        foreach($this->_frames as $key=>$frame) {
             array_push($frames['frames'], array('index'=>$key, 'text'=>$frame[0], 'icon'=>empty($frame[1]) ? $this->_icon : 'i'.$frame[1]));
        }
+       $data = new stdClass();
+       $data->model = new stdClass();
        $data->model->frames = $frames;
 
         if(in_array(array("alarm1","alarm2","alarm3","alarm4","alarm5","alarm6","alarm7","alarm8","alarm9","alarm10","alarm11","alarm12","alarm13"),$this->_sound)) {
+            $data->sound = new stdClass();
             $data->sound->category = "alarms";
             $data->sound->id = $this->_sound;
         } elseif (!empty($this->_sound)){
+            $data->sound = new stdClass();
             $data->sound->category = "notifications";
             $data->sound->id = $this->_sound;
         }
