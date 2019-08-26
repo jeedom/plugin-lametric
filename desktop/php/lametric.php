@@ -102,12 +102,6 @@ sendVarToJS('eqType', 'lametric');
 					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>Visible
 					        </div>
 				      </div>
-		              <div class="form-group">
-			            <label class="col-sm-3 control-label">{{Push URL}}</label>
-			            <div class="col-sm-5">
-			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pushurl" placeholder="Push URL"/>
-			            </div>
-			          </div>
 					  <div class="form-group">
 			            <label class="col-sm-3 control-label">{{LOCAL IP}}</label>
 			            <div class="col-sm-5">
@@ -115,9 +109,9 @@ sendVarToJS('eqType', 'lametric');
 			            </div>
 			          </div>
 			          <div class="form-group">
-			            <label class="col-sm-3 control-label">{{Token Access}}</label>
+			            <label class="col-sm-3 control-label">{{Token API}}</label>
 			            <div class="col-sm-5">
-			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="Token Access"/>
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="Token API"/>
 			            </div>
 			          </div>
 		                

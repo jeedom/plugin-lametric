@@ -57,7 +57,6 @@ class Lametric2
  
             $this->_http_headers = array(
                 'Accept: application/json',
-                'Authorization: Basic '.$this->_token,
                 'Pragma: no-cache',
             );
 
@@ -170,7 +169,6 @@ class Lametric2
        foreach($this->_frames as $key=>$frame) {
             array_push($frames, array('text'=>$frame[0], 'icon'=>empty($frame[1]) ? $this->_icon : $frame[1]));
        }
-       throw new LametricException('toto .'.json_encode($frames));
        $data = new stdClass();
        $data->model = new stdClass();
        $data->model->frames = $frames;
@@ -209,7 +207,7 @@ class Lametric2
 
     public function push($text = null, $icon = null)
     {
-        if(empty($this.generatePushUrl()) || empty($this->_token)) {
+        if(empty($this->generatePushUrl()) || empty($this->_token)) {
             throw new LametricException('Config needs to be set.');
         } elseif(empty($this->_frames) && is_null($text)) {
              throw new LametricException('Empty frames array.');
@@ -235,10 +233,12 @@ class Lametric2
                         array(array($this->_frames)))); 
             }          
         }
-        throw new LametricException('data: '.$data_string);
+     
         $ch = curl_init();
+	
         curl_setopt($ch, CURLOPT_URL, $this->generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
+        curl_setopt($ch, CURLOPT_USERPWD , 'dev:'.$this->_token);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
