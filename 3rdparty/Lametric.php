@@ -52,7 +52,7 @@ class Lametric2
 	public function __construct($config=null)
 	{
         if(!is_null($config)) {
-            $this->setPushURL($config['pushURL']);
+            $this->setLocalIp($config['localIP']);
             $this->setToken($config['token']);
  
             $this->_http_headers = array(
