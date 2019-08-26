@@ -40,19 +40,6 @@ class lametric extends eqLogic {
 		$lametricCmd->setDisplay('message_placeholder', __('Texte', __FILE__));
 		$lametricCmd->setIsVisible(true);
 		$lametricCmd->save();
-		
-		$lametricCmd = $this->getCmd(null, 'clear');
-		if (!is_object($lametricCmd)) {
-			$lametricCmd = new lametricCmd();
-			$lametricCmd->setName(__('Vider', __FILE__));
-		}
-		$lametricCmd->setEqLogic_id($this->getId());
-		$lametricCmd->setLogicalId('clear');
-		$lametricCmd->setType('action');
-		$lametricCmd->setSubType('other');
-		$lametricCmd->setIsVisible(true);
-		$lametricCmd->save();
-
 	}
 	
 }
@@ -93,10 +80,6 @@ class lametricCmd extends cmd {
     			$lametric2->addFrame($_options['message'], $_options['title']);		
 			}
 		
-			$lametric2->push();
-			return true;
-		}else{
-			$lametric2->addFrame('JEEDOM', '4515');	
 			$lametric2->push();
 			return true;
 		}
