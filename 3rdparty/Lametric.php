@@ -16,11 +16,18 @@ class Lametric2
 	private $_token = null;
 
     /**
+     *  The number of times message should be displayed, If cycles is set to 0, notification will stay on the screen until user dismisses it manually
+     *
+     * @var string
+     */
+    private $_cycle = 1;
+    
+    /**
      * Icon number from LaMetric gallery
      *
      * @var mixed
      */
-	private $_icon = null;
+	private $_icon = "";
 
     /**
      * Sound number from LaMetric
@@ -109,6 +116,17 @@ class Lametric2
         $this->_token = $token;
     }
 
+      /**
+    * Set token API calls
+    * 
+    * @param    string  $token    String with application token
+    * @return   void
+    */
+    public function setCycle($cycle)
+    {
+        $this->_cycle = 0;
+    }
+
     /**
     * Add frame to global frames array
     * 
@@ -173,7 +191,7 @@ class Lametric2
        $data->model = new stdClass();
        $data->model->frames = $frames;
 
-        if(in_array(array("alarm1","alarm2","alarm3","alarm4","alarm5","alarm6","alarm7","alarm8","alarm9","alarm10","alarm11","alarm12","alarm13"),$this->_sound)) {
+        if(in_array($this->_sound,array("alarm1","alarm2","alarm3","alarm4","alarm5","alarm6","alarm7","alarm8","alarm9","alarm10","alarm11","alarm12","alarm13"))) {
             $sound = new stdClass();
             $sound->category = "alarms";
             $sound->id = $this->_sound;
@@ -184,6 +202,10 @@ class Lametric2
             $sound->category = "notifications";
             $sound->id = $this->_sound;
             $data->model->sound = $sound;
+        }
+
+        if(!is_null($this->_cycle)){
+            $data->model->cycles = $this->_cycle;
         }
      
        return (!$json) ? $data : json_encode($data);
@@ -208,7 +230,7 @@ class Lametric2
     * @throws   Lametric\Exception           If push notification cannot be sent
     */
 
-    public function push($text = null, $icon = null)
+    public function push($text = null, $icon = "")
     {
         if(empty($this->generatePushUrl()) || empty($this->_token)) {
             throw new LametricException('Config needs to be set.');
@@ -216,23 +238,15 @@ class Lametric2
              throw new LametricException('Empty frames array.');
         } elseif(is_array($text)) {
             $this->addFrames($text);
-            $data_string = json_encode($this->generateData());
-            $this->clearFrames();
-        } elseif(is_null($text)) { 
-            $data_string = json_encode($this->generateData());
-        } else {
-            if(empty($this->_frames)) {
-                $this->addFrame($text,$icon);
-                $data_string = json_encode($this->generateData());
-                $this->clearFrames();
-            } else {
-                $data_string = json_encode($this->generateData());
-                $this->clearFrames();
-            }          
+        }elseif(empty($this->_frames)) {
+            $this->addFrame($text,$icon);
         }
+          
+        $data_string = json_encode($this->generateData());
+        $this->clearFrames();
      
         $ch = curl_init();
-	
+        log::add('lametric', 'debug', 'json post body:'.$data_string);	
         curl_setopt($ch, CURLOPT_URL, $this->generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
         curl_setopt($ch, CURLOPT_USERPWD , 'dev:'.$this->_token);
