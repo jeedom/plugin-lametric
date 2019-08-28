@@ -101,9 +101,13 @@ sendVarToJS('eqType', 'lametric');
 					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>Activer
 					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>Visible
 					        </div>
-				      </div>
+					  </div>
+		            </fieldset>
+					  <fieldset>
+		                <legend>{{Options pour les notifications}}</legend>
+
 					  <div class="form-group">
-			            <label class="col-sm-3 control-label">{{LOCAL IP}}</label>
+			            <label class="col-sm-3 control-label">{{Local IP}}</label>
 			            <div class="col-sm-5">
 			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="localip" placeholder="Local IP"/>
 			            </div>
@@ -111,10 +115,24 @@ sendVarToJS('eqType', 'lametric');
 			          <div class="form-group">
 			            <label class="col-sm-3 control-label">{{Token API}}</label>
 			            <div class="col-sm-5">
-			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="Token API"/>
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="tokenapi" placeholder="Token API"/>
+			            </div>
+					  </div>
+					  </fieldset>
+					  <fieldset>
+					  <legend>{{Options pour une application 'indicator'}}</legend>
+					  <div class="form-group">
+			            <label class="col-sm-3 control-label">{{Push URL}}</label>
+			            <div class="col-sm-5">
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pushurl" placeholder="Push URL"/>
 			            </div>
 			          </div>
-		                
+			          <div class="form-group">
+			            <label class="col-sm-3 control-label">{{Token Access}}</label>
+			            <div class="col-sm-5">
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="Token Access"/>
+			            </div>
+			          </div>
 		            </fieldset> 
 		        </form>
 			</div>
