@@ -42,18 +42,6 @@ class lametric extends eqLogic
         $lametricCmd->setIsVisible(true);
         $lametricCmd->save();
 
-        $lametricCmd = $this->getCmd(null, 'dismiss');
-        if (!is_object($lametricCmd)) {
-            $lametricCmd = new lametricCmd();
-            $lametricCmd->setName(__('Dismiss', __FILE__));
-        }
-        $lametricCmd->setEqLogic_id($this->getId());
-        $lametricCmd->setLogicalId('dismiss');
-        $lametricCmd->setType('action');
-        $lametricCmd->setSubType('other');
-        $lametricCmd->setIsVisible(true);
-        $lametricCmd->save();
-
         $lametricCmd = $this->getCmd(null, 'message');
         if (!is_object($lametricCmd)) {
             $lametricCmd = new lametricCmd();
@@ -75,6 +63,18 @@ class lametric extends eqLogic
         }
         $lametricCmd->setEqLogic_id($this->getId());
         $lametricCmd->setLogicalId('clear');
+        $lametricCmd->setType('action');
+        $lametricCmd->setSubType('other');
+        $lametricCmd->setIsVisible(true);
+        $lametricCmd->save();
+
+        $lametricCmd = $this->getCmd(null, 'dismiss');
+        if (!is_object($lametricCmd)) {
+            $lametricCmd = new lametricCmd();
+            $lametricCmd->setName(__('Dismiss', __FILE__));
+        }
+        $lametricCmd->setEqLogic_id($this->getId());
+        $lametricCmd->setLogicalId('dismiss');
         $lametricCmd->setType('action');
         $lametricCmd->setSubType('other');
         $lametricCmd->setIsVisible(true);
@@ -150,9 +150,13 @@ class lametricCmd extends cmd
             }
             return true;
         } else {
-            $lametric2->addFrame('JEEDOM', '4515');
-            $lametric2->pushForNotificationApp();
-            return true;
+            if ($this->logicalId == 'clear') {
+                $lametric2->addFrame('JEEDOM', '4515');
+                $lametric2->pushForNotificationApp();
+                return true;
+            }elseif ($this->logicalId == 'dismiss') {
+                $lametric2->dismissNotifications();
+            }
         }
     }
 }
