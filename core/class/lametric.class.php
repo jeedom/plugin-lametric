@@ -98,7 +98,6 @@ class lametricCmd extends cmd
     {
         log::add('lametric', 'info', 'Debut de l action');
         $lametricEq = $this->getEqLogic();
-        log::add('lametric', 'info', 'Debut de l actionRR' . $lametricEq->getConfiguration('pushurl'));
         $lametric2 = new Lametric2(array(
             'localIP' => $lametricEq->getConfiguration('localip'),
             'tokenApi' => $lametricEq->getConfiguration('tokenapi'),
@@ -110,23 +109,18 @@ class lametricCmd extends cmd
             if ($this->logicalId == 'notification') {
                 $messages = explode('|', $_options['message']);
                 $titles = explode('|', $_options['title']);
-                log::add('lametric', 'debug', 'Debut de l action' . $titles[0]);
                 if (!empty($titles[0]) && substr_compare($titles[0], '!', 0, 1) == 0) {
-                    log::add('lametric', 'debug', 'ddd');
                     $lametric2->setCycle(0);
                     $titles[0] = substr($titles[0], 1);
-                    log::add('lametric', 'debug', 'dddd' . $titles[0]);
                 }
 
                 $i = 0;
                 if (count($titles) == count($messages) + 1) {
-                    log::add('lametric', 'debug', 'setsound' . $titles[0]);
+                    log::add('lametric', 'debug', 'set sound' . $titles[0]);
                     $lametric2->setSound($titles[0]);
                     $i = 1;
                 }
-                log::add('lametric', 'debug', 'count' . count($messages));
                 foreach ($messages as $message) {
-                    log::add('lametric', 'debug', 'Debut de l action3' . $i);
                     $lametric2->addFrame($message, $titles[$i]);
                     $i++;
                 }

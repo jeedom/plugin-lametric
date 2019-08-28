@@ -72,7 +72,6 @@ class Lametric2
     public function __construct($config = null)
     {
         if (!is_null($config)) {
-            log::add('lametric', 'info', 'Debut de l actionq' . $config['pushurl']);
             $this->setLocalIp($config['localIP']);
             $this->setTokenApi($config['tokenApi']);
             $this->setPushURL($config['pushurl']);
@@ -199,7 +198,7 @@ class Lametric2
     }
 
     /**
-     * Set local IP for API calls
+     * Generate the url for local api notifications
      * 
      * @return   void
      */
@@ -297,7 +296,7 @@ class Lametric2
         $this->clearFrames();
 
         $ch = curl_init();
-        log::add('lametric', 'debug', 'json post body:' . $data_string);
+        log::add('lametric', 'debug', 'Body send to local notifications api:' . $data_string);
         curl_setopt($ch, CURLOPT_URL, $this->generatePushUrl());
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
         curl_setopt($ch, CURLOPT_USERPWD, 'dev:' . $this->_tokenApi);
@@ -353,7 +352,7 @@ class Lametric2
                 ));
             }
         }
-        log::add('lametric', 'debug', 'json post body:' . $data_string);
+        log::add('lametric', 'debug', 'Body send to app:' . $data_string);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $this->_pushUrl);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->_http_headers);
