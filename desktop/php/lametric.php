@@ -47,7 +47,7 @@ sendVarToJS('eqType', 'lametric');
                 foreach ($eqLogics as $eqLogic) {
 					$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
                     echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="text-align: center; background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
-					echo '<img src="plugins/lametric/doc/images/lametric_icon.png" height="105" width="95" />';	
+					echo '<img src="plugins/lametric/docs/images/lametric_icon.png" height="105" width="95" />';	
                     echo "<br>";
                     echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;">' . $eqLogic->getHumanName(true, true) . '</span>';
                     echo '</div>';
@@ -101,8 +101,27 @@ sendVarToJS('eqType', 'lametric');
 					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>Activer
 					          <input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>Visible
 					        </div>
-				      </div>
-		              <div class="form-group">
+					  </div>
+		            </fieldset>
+					  <fieldset>
+		                <legend>{{Options pour les notifications}}</legend>
+
+					  <div class="form-group">
+			            <label class="col-sm-3 control-label">{{Local IP}}</label>
+			            <div class="col-sm-5">
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="localip" placeholder="Local IP"/>
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-sm-3 control-label">{{Token API}}</label>
+			            <div class="col-sm-5">
+			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="tokenapi" placeholder="Token API"/>
+			            </div>
+					  </div>
+					  </fieldset>
+					  <fieldset>
+					  <legend>{{Options pour une application 'indicator'}}</legend>
+					  <div class="form-group">
 			            <label class="col-sm-3 control-label">{{Push URL}}</label>
 			            <div class="col-sm-5">
 			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="pushurl" placeholder="Push URL"/>
@@ -114,7 +133,6 @@ sendVarToJS('eqType', 'lametric');
 			              <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="Token Access"/>
 			            </div>
 			          </div>
-		                
 		            </fieldset> 
 		        </form>
 			</div>
@@ -122,7 +140,7 @@ sendVarToJS('eqType', 'lametric');
 				<legend><i class="fa fa-info"></i>  {{Informations}}</legend>
                  <div class="form-group">	
                     <div style="text-align: center">
-                     	<center><img src="plugins/lametric/doc/images/lametric_icon.png" id="img_Model"  onerror="this.src='plugins/lametric/doc/images/lametric_icon.png'" style="height : 280px;" /></center>
+                     	<center><img src="plugins/lametric/docs/images/lametric_icon.png" id="img_Model"  onerror="this.src='plugins/lametric/docs/images/lametric_icon.png'" style="height : 280px;" /></center>
                     </div>
                	</div>
 			</div>
