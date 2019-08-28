@@ -59,7 +59,7 @@ class lametric extends eqLogic
         $lametricCmd = $this->getCmd(null, 'clear');
         if (!is_object($lametricCmd)) {
             $lametricCmd = new lametricCmd();
-            $lametricCmd->setName(__('Vider', __FILE__));
+            $lametricCmd->setName(__('Vider message', __FILE__));
         }
         $lametricCmd->setEqLogic_id($this->getId());
         $lametricCmd->setLogicalId('clear');
@@ -71,7 +71,7 @@ class lametric extends eqLogic
         $lametricCmd = $this->getCmd(null, 'dismiss');
         if (!is_object($lametricCmd)) {
             $lametricCmd = new lametricCmd();
-            $lametricCmd->setName(__('Dismiss', __FILE__));
+            $lametricCmd->setName(__('Vider notifications', __FILE__));
         }
         $lametricCmd->setEqLogic_id($this->getId());
         $lametricCmd->setLogicalId('dismiss');
