@@ -2,61 +2,54 @@
 if (!isConnect('admin')) {
     throw new Exception('{{401 - Accès non autorisé}}');
 }
-
-$eqLogics=eqLogic::byType('lametric');
-sendVarToJS('eqType', 'lametric');
-
+$plugin = plugin::byId('lametric');
+sendVarToJS('eqType', $plugin->getId());
+$eqLogics = eqLogic::byType($plugin->getId());
 ?>
 
 <div class="row row-overflow">
-    <div class="col-lg-2">
-        <div class="bs-sidebar">
-            <ul id="ul_eqLogic" class="nav nav-list bs-sidenav">
-                <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
-                <?php
-                foreach ($eqLogics as $eqLogic) {
-                    echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
-                }
-                ?>
-            </ul>
-        </div>
-    </div>
-     <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
+     <div class="col-lg-12 eqLogicThumbnailDisplay">
    <legend><i class="fa fa-cog"></i>  {{Gestion}}</legend>
    <div class="eqLogicThumbnailContainer">
-   		<div class="cursor eqLogicAction" data-action="add" style="text-align: center; background-color : #ffffff; height : 120px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
-	       <i class="fa fa-plus-circle" style="font-size : 5em;color:#94ca02;"></i>
-	     <br>
-	     <span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02">Ajouter</span>
-	   </div>
-	   <div class="cursor eqLogicAction" data-action="gotoPluginConf" style="text-align: center; background-color : #ffffff; height : 140px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;">
-		   <i class="fa fa-wrench" style="font-size : 5em;color:#767676;"></i>
-		   <br>
-		   <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#767676">{{Configuration}}</span>
-	   </div>
+	<div class="cursor eqLogicAction logoPrimary" data-action="add">
+		<i class="fas fa-plus-circle"></i>
+		<br/>
+		<span>{{Ajouter}}</span>
+	</div>
+	<div class="cursor eqLogicAction logoSecondary" data-action="gotoPluginConf">
+		<i class="fas fa-wrench"></i>
+		<br/>
+		<span >{{Configuration}}</span>
+	</div>
   </div>
-        <legend><i class="techno-cable1"></i> {{Mes lametrics}}
-        </legend>
-        <?php
-        if (count($eqLogics) == 0) {
-            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de lametric, cliquez sur Ajouter pour commencer}}</span></center>";
-        } else {
-            ?>
+        <legend><i class="techno-cable1"></i> {{Mes lametrics}}</legend>
+	 <input class="form-control" placeholder="{{Rechercher}}" id="in_searchEqlogic" />
             <div class="eqLogicThumbnailContainer">
-                <?php
-                foreach ($eqLogics as $eqLogic) {
-					$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
-                    echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="text-align: center; background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
-					echo '<img src="plugins/lametric/doc/images/lametric_icon.png" height="105" width="95" />';	
-                    echo "<br>";
-                    echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;">' . $eqLogic->getHumanName(true, true) . '</span>';
-                    echo '</div>';
-                }
-                ?>
+               	<?php
+		foreach ($eqLogics as $eqLogic) {
+			$opacity = ($eqLogic->getIsEnable()) ? '' : 'disableCard';
+			echo '<div class="eqLogicDisplayCard cursor '.$opacity.'" data-eqLogic_id="' . $eqLogic->getId() . '">';
+			echo '<img src="' . $plugin->getPathImgIcon() . '"/>';
+			echo '<br>';
+			echo '<span class="name">' . $eqLogic->getHumanName(true, true) . '</span>';
+			echo '</div>';
+		}
+		?>
             </div>
-        <?php } ?>
     </div>
-    <div class="col-lg-10 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
+    <div class="col-lg-12 eqLogic" style="display: none;">
+	   	<div class="input-group pull-right" style="display:inline-flex">
+			<span class="input-group-btn">
+				<a class="btn btn-default eqLogicAction btn-sm roundedLeft" data-action="configure"><i class="fas fa-cogs"></i> {{Configuration avancée}}</a><a class="btn btn-sm btn-success eqLogicAction" data-action="save"><i class="fas fa-check-circle"></i> {{Sauvegarder}}</a><a class="btn btn-danger btn-sm eqLogicAction roundedRight" data-action="remove"><i class="fas fa-minus-circle"></i> {{Supprimer}}</a>
+			</span>
+		</div>
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation"><a class="eqLogicAction cursor" aria-controls="home" role="tab" data-action="returnToThumbnailDisplay"><i class="fas fa-arrow-circle-left"></i></a></li>
+			<li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fas fa-tachometer-alt"></i> {{Equipement}}</a></li>
+			<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-list-alt"></i> {{Commandes}}</a></li>
+		</ul> 
+	    	<div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+			<div role="tabpanel" class="tab-pane active" id="eqlogictab">
         <div class="row">
         	<div class="col-sm-6">
 		        <form class="form-horizontal">
@@ -75,7 +68,7 @@ sendVarToJS('eqType', 'lametric');
 		                        <select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
 		                            <option value="">{{Aucun}}</option>
 		                            <?php
-		                            foreach (object::all() as $object) {
+		                            foreach (jeeObject::all() as $object) {
 		                                echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
 		                            }
 		                            ?>
@@ -128,8 +121,9 @@ sendVarToJS('eqType', 'lametric');
 			</div>
 		</div>		       
 
-        <legend>Commandes</legend>
-       <br/>
+       	</div>
+			<div role="tabpanel" class="tab-pane" id="commandtab">
+				<br/>
         <table id="table_cmd" class="table table-bordered table-condensed">
             <thead>
                 <tr>
@@ -143,17 +137,9 @@ sendVarToJS('eqType', 'lametric');
 
             </tbody>
         </table>
-
-        <form class="form-horizontal">
-            <fieldset>
-                <div class="form-actions">
-                    <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-                    <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
-                </div>
-            </fieldset>
-        </form>
-
     </div>
+	</div>
+	    </div>
 </div>
 <?php include_file('desktop', 'lametric', 'js', 'lametric'); ?>
 <?php include_file('core', 'plugin.template', 'js'); ?>
