@@ -1,0 +1,41 @@
+{
+    "plugins\/lametric\/desktop\/php\/lametric.php": {
+        "401 - Accès non autorisé": "401 - Несанкционированный доступ",
+        "Gestion": "Управление",
+        "Ajouter": "Добавить",
+        "Configuration": "Конфигурация",
+        "Mes lametrics": "",
+        "Rechercher": "поиск",
+        "Configuration avancée": "Расширенные настройки",
+        "Sauvegarder": "Сохранить",
+        "Supprimer": "удаление",
+        "Equipement": "Оборудование",
+        "Commandes": "Команды",
+        "Général": "Главная",
+        "Nom de l'équipement lametric": "",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Catégorie": "категория",
+        "Activer": "активировать",
+        "Visible": "Видимый",
+        "Push URL": "толчок URL",
+        "Token Access": "",
+        "Informations": "Информация",
+        "Nom": "Имя",
+        "Type": "Тип",
+        "Options": "Опции"
+    },
+    "plugins\/lametric\/desktop\/js\/lametric.js": {
+        "Historiser": "История",
+        "Afficher": "дисплей",
+        "Visible": "Видимый",
+        "Inverser": "Обратный",
+        "Tester": "Тест"
+    },
+    "plugins\/lametric\/core\/class\/lametric.class.php": {
+        "Message": "Сообщение",
+        "ID de l\\'icone": "",
+        "Texte": "текст",
+        "Vider": "Пусто"
+    }
+}

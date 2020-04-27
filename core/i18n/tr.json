@@ -1,0 +1,41 @@
+{
+    "plugins\/lametric\/desktop\/php\/lametric.php": {
+        "401 - Accès non autorisé": "401 - Yetkisiz erişim",
+        "Gestion": "Idare",
+        "Ajouter": "Ekle",
+        "Configuration": "Ayar",
+        "Mes lametrics": "",
+        "Rechercher": "Arayın",
+        "Configuration avancée": "Gelişmiş ayarlar",
+        "Sauvegarder": "Kaydet",
+        "Supprimer": "Sil",
+        "Equipement": "Cihaz",
+        "Commandes": "Komutalar",
+        "Général": "Genel",
+        "Nom de l'équipement lametric": "",
+        "Objet parent": "Üst nesne",
+        "Aucun": "Hiçbir",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştir",
+        "Visible": "Görülebilir",
+        "Push URL": "",
+        "Token Access": "",
+        "Informations": "Bilgiler",
+        "Nom": "İsim",
+        "Type": "Çeşit",
+        "Options": "Opsiyonlar"
+    },
+    "plugins\/lametric\/desktop\/js\/lametric.js": {
+        "Historiser": "Tarihe göre sırala",
+        "Afficher": "Göster",
+        "Visible": "Görülebilir",
+        "Inverser": "Ters çevir",
+        "Tester": "Test et"
+    },
+    "plugins\/lametric\/core\/class\/lametric.class.php": {
+        "Message": "Mesaj",
+        "ID de l\\'icone": "",
+        "Texte": "Metin",
+        "Vider": "Boşalt"
+    }
+}

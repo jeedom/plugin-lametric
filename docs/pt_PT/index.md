@@ -1,7 +1,7 @@
 
 .
 
-Plugin configuration 
+Configuração do plugin 
 =======================
 
 
@@ -14,7 +14,7 @@ Plugin configuration
 ![lametric1](../images/lametric1.png)
 
 -   . 
-    Type" :
+    Tipo" :
 
 ![lametric2](../images/lametric2.png)
 
@@ -42,15 +42,15 @@ Plugin configuration
 
 :
 
--   **Message** 
+-   **Mensagem** 
 
--   **Clear** "
+-   **Vazio** "
     
 
- : \* **** :
+ : * **** :
 
- : <https:/icons>) \*
-**Text** : 
+ : <https:/icons>) *
+**Texto** : 
 
 
  : **|**
