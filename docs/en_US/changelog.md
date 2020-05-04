@@ -1,4 +1,4 @@
 # 11/05/2019
 
 - Jeedom v4 support
-- Support php 7.3
+- Support PHP 7.3

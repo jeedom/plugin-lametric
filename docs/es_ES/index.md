@@ -14,7 +14,7 @@ App "en el sitio web de LaMetric :
 ![lametric1](../images/lametric1.png)
 
 -   3 \. Configure un icono, un nombre y seleccione Push in "Comunicación
-    Tipo" :
+    type" :
 
 ![lametric2](../images/lametric2.png)
 
