@@ -3,7 +3,6 @@
 Plugin permettant d’afficher des notifications / informations sur LaMetric.
 
 # Configuration du plugin 
-=======================
 
 Une fois le plugin installé, il est nécessaire de créer une "indicator App" sur le site LaMetric :
 
