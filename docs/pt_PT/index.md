@@ -1,61 +1,45 @@
-Plugin para exibir notificações / informações sobre
-LaMetric.
+# Plugin LaMetric
 
-Configuração do plugin 
-=======================
+Plugin para exibir notificações / informações sobre LaMetric.
 
-Após a instalação do plug-in, é necessário criar um indicador "
-App "no site da LaMetric :
+# Configuração do plugin 
+
+Após a instalação do plug-in, é necessário criar um "aplicativo indicador" no site LaMetric :
 
 -   1 \. Se rendre à l'adresse : <https://developer.lametric.com>
-
 -   2 \. Crie um "INDICATOR APP" :
 
 ![lametric1](../images/lametric1.png)
 
--   3 \. Configure um ícone, um nome e selecione Push in "Communication
-    type" :
+-   3 \. Configure um ícone, um nome e selecione Enviar "Comunicação típica" :
 
 ![lametric2](../images/lametric2.png)
 
--   4 \. Dê um nome e uma descrição ao seu aplicativo e marque "Aplicativo particular"
-    depois clique em "Salvar" :
+-   4 \. Dê um nome e uma descrição ao seu aplicativo e marque "Aplicativo particular" e clique em "Salvar" :
 
 ![lametric3](../images/lametric3.png)
 
--   5 \. Publique o aplicativo e instale-o no seu LaMetric usando
-    o aplicativo móvel.
+-   5 \. Publique o aplicativo e instale-o no seu LaMetric usando o aplicativo móvel.
 
-Depois que o aplicativo é publicado, você tem as informações
-essencial para a configuração do plugin.
+Depois que o aplicativo é publicado, você tem informações essenciais para configurar o plugin.
 
 ![lametric4](../images/lametric4.png)
 
-Você pode criar um novo equipamento no Jeedom e preencher
-os campos solicitados :
+Você pode criar um novo equipamento no Jeedom e preencher os campos solicitados :
 
 ![lametric5](../images/lametric5.png)
 
-Usando o plugin 
-=====================
+# Usando o plugin 
 
-2 pedidos são criados automaticamente ao adicionar equipamento
-:
+2 pedidos são criados automaticamente ao adicionar equipamento :
 
--   **Mensagem** ⇒ Permite o envio de mensagens
+-   **Mensagem** ⇒ Permite o envio de mensagens. O comando do tipo de mensagem contém 2 campos : 
+    - **ID do ícone** : Correspond au numéro de l'icône souhaitée (Ne pas mettre le \# ; liste des icônes disponibles ici : <https://developer.lametric.com/icons>)
+    - **Texto** : Corresponde ao texto que você deseja exibir
+-   **Vazio** ⇒ Permite restaurar o display para vazio ("JEEDOM" é registrado)
 
--   **Vazio** ⇒ Permite redefinir a exibição ("JEEDOM"
-    registre-se)
+É possível enviar mais mensagens em um envio, separando os ícones e os textos pelo caractere : **|**
 
-O comando do tipo de mensagem contém 2 campos : \* **ID do ícone** :
-Corresponde ao número do ícone desejado (não coloque a lista \#;
-des icônes disponibles ici : <https://developer.lametric.com / icons>) \*
-**Texto** : Corresponde ao texto que você deseja exibir
-
-É possível enviar mais mensagens em um envio, separando
-ícones e textos por personagem : **|**
-
-Aqui está, por exemplo, um cenário que envia 4 informações diferentes em 1
-remessa única :
+Aqui está, por exemplo, um cenário que envia 4 informações diferentes em um único envio :
 
 ![lametric6](../images/lametric6.png)

@@ -1,61 +1,45 @@
-Plugin to display notifications / information on
-LaMetric.
+# LaMetric plugin
 
-Plugin configuration 
-=======================
+Plugin to display notifications / information on LaMetric.
 
-Once the plugin is installed, it is necessary to create an "indicator
-App "on the LaMetric website :
+# Plugin configuration 
+
+Once the plugin is installed, it is necessary to create an "indicator App" on the LaMetric site :
 
 -   1 \. Se rendre à l'adresse : <https://developer.lametric.com>
-
 -   2 \. Create an "INDICATOR APP" :
 
 ![lametric1](../images/lametric1.png)
 
--   3 \. Configure an icon, a name and select Push in "Communication
-    type" :
+-   3 \. Configure an icon, a name and select Push in "Typical communication" :
 
 ![lametric2](../images/lametric2.png)
 
--   4 \. Give a name and description to your app and check "Private app"
-    then click on "Save" :
+-   4 \. Give a name and a description to your app and check "Private app" then click on "Save" :
 
 ![lametric3](../images/lametric3.png)
 
--   5 \. Publish the application then install it on your LaMetric using
-    the mobile app.
+-   5 \. Publish the application then install it on your LaMetric using the mobile application.
 
-Once the application is published, you have the information
-essential for plugin configuration.
+Once the application is published, you have essential information for configuring the plugin.
 
 ![lametric4](../images/lametric4.png)
 
-You can then create new equipment in Jeedom and fill in
-the requested fields :
+You can then create new equipment in Jeedom and fill in the requested fields :
 
 ![lametric5](../images/lametric5.png)
 
-Using the plugin 
-=====================
+# Using the plugin 
 
-2 orders are automatically created when adding equipment
-:
+2 orders are automatically created when adding equipment :
 
--   **Message** ⇒ Allows the sending of messages
+-   **Message** ⇒ Allows the sending of messages. The message type command contains 2 fields : 
+    - **Icon ID** : Correspond au numéro de l'icône souhaitée (Ne pas mettre le \# ; liste des icônes disponibles ici : <https://developer.lametric.com/icons>)
+    - **Text** : Corresponds to the text you want to display
+-   **Clear** ⇒ Allows you to reset the display to empty ("JEEDOM" is then registered)
 
--   **Clear** ⇒ Allows you to reset the display ("JEEDOM"
-    then register)
+It is possible to send more messages in one send by separating the icons and the texts by the character : **|**
 
-The message type command contains 2 fields : \* **Icon ID** :
-Corresponds to the number of the desired icon (Do not put the \#; list
-des icônes disponibles ici : <https://developer.lametric.com / icons>) \*
-**Text** : Corresponds to the text you want to display
-
-It is possible to send more messages in one send by separating
-icons and texts by character : **|**
-
-Here is for example a scenario sending 4 different information in 1
-single shipment :
+Here is for example a scenario sending 4 different information in 1 single sending :
 
 ![lametric6](../images/lametric6.png)
