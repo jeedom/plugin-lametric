@@ -42,15 +42,15 @@ Usando el complemento
 2 pedidos se crean automáticamente al agregar equipo
 :
 
--   **Message** ⇒ Permite el envío de mensajes
+-   **Mensaje** ⇒ Permite el envío de mensajes
 
--   **Vider** ⇒ Le permite restablecer la pantalla ("JEEDOM"
+-   **Vaciar** ⇒ Le permite restablecer la pantalla ("JEEDOM"
     luego regístrese)
 
-El comando de tipo de mensaje contiene 2 campos. : \* **ID de icono** :
+El comando de tipo de mensaje contiene 2 campos : \* **ID de icono** :
 Corresponde al número del icono deseado (No coloque la lista \#;
 des icônes disponibles ici : <https://developer.lametric.com / icons>) \*
-**Texte** : Corresponde al texto que desea mostrar.
+**Texto** : Corresponde al texto que desea mostrar
 
 Es posible enviar más mensajes en un solo envío separando
 iconos y textos por personaje : **|**

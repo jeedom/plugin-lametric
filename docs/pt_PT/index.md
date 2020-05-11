@@ -42,15 +42,15 @@ Usando o plugin
 2 pedidos são criados automaticamente ao adicionar equipamento
 :
 
--   **Message** ⇒ Permite o envio de mensagens
+-   **Mensagem** ⇒ Permite o envio de mensagens
 
--   **Vider** ⇒ Permite redefinir a exibição ("JEEDOM"
+-   **Vazio** ⇒ Permite redefinir a exibição ("JEEDOM"
     registre-se)
 
 O comando do tipo de mensagem contém 2 campos : \* **ID do ícone** :
 Corresponde ao número do ícone desejado (não coloque a lista \#;
 des icônes disponibles ici : <https://developer.lametric.com / icons>) \*
-**Texte** : Corresponde ao texto que você deseja exibir
+**Texto** : Corresponde ao texto que você deseja exibir
 
 É possível enviar mais mensagens em um envio, separando
 ícones e textos por personagem : **|**

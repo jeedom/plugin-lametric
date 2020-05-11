@@ -44,13 +44,13 @@ Using the plugin
 
 -   **Message** ⇒ Allows the sending of messages
 
--   **Vider** ⇒ Allows you to reset the display ("JEEDOM"
+-   **Clear** ⇒ Allows you to reset the display ("JEEDOM"
     then register)
 
-The message Type command contains 2 fields : \* **Icon ID** :
+The message type command contains 2 fields : \* **Icon ID** :
 Corresponds to the number of the desired icon (Do not put the \#; list
 des icônes disponibles ici : <https://developer.lametric.com / icons>) \*
-**Texte** : Corresponds to the text you want to display
+**Text** : Corresponds to the text you want to display
 
 It is possible to send more messages in one send by separating
 icons and texts by character : **|**
