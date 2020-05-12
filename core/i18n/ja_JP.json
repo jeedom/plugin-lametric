@@ -1,0 +1,41 @@
+{
+    "plugins\/lametric\/desktop\/php\/lametric.php": {
+        "401 - Accès non autorisé": "401-不正アクセス",
+        "Gestion": "管理",
+        "Ajouter": "加えます",
+        "Configuration": "コンフィギュレーション",
+        "Mes lametrics": "",
+        "Rechercher": "検索",
+        "Configuration avancée": "高度な構成",
+        "Sauvegarder": "セーブ",
+        "Supprimer": "取り除きます",
+        "Equipement": "設備",
+        "Commandes": "コマンド",
+        "Général": "コモン",
+        "Nom de l'équipement lametric": "",
+        "Objet parent": "親オブジェクト",
+        "Aucun": "何でもありません",
+        "Catégorie": "カテゴリ",
+        "Activer": "アクティブ",
+        "Visible": "目に見えます",
+        "Push URL": "プッシュURL",
+        "Token Access": "",
+        "Informations": "情報",
+        "Nom": "表題",
+        "Type": "タイプ",
+        "Options": "オプション"
+    },
+    "plugins\/lametric\/desktop\/js\/lametric.js": {
+        "Historiser": "Historicize",
+        "Afficher": "ディスプレイ",
+        "Visible": "目に見えます",
+        "Inverser": "逆",
+        "Tester": "テスト"
+    },
+    "plugins\/lametric\/core\/class\/lametric.class.php": {
+        "Message": "メッセージ",
+        "ID de l\\'icone": "",
+        "Texte": "テキスト",
+        "Vider": "空"
+    }
+}

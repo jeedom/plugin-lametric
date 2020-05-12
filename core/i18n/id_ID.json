@@ -1,0 +1,41 @@
+{
+    "plugins\/lametric\/desktop\/php\/lametric.php": {
+        "401 - Accès non autorisé": "401 - Akses tidak sah",
+        "Gestion": "Manajemen",
+        "Ajouter": "Tambahan",
+        "Configuration": "Konfigurasi",
+        "Mes lametrics": "",
+        "Rechercher": "Pencarian",
+        "Configuration avancée": "Konfigurasi lanjutan",
+        "Sauvegarder": "Menyimpan",
+        "Supprimer": "Menghapus",
+        "Equipement": "Peralatan",
+        "Commandes": "Perintah",
+        "Général": "Umum",
+        "Nom de l'équipement lametric": "",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Catégorie": "Kategori",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Push URL": "Mendorong URL",
+        "Token Access": "",
+        "Informations": "Informasi",
+        "Nom": "Nama",
+        "Type": "Jenis",
+        "Options": "Pilihan"
+    },
+    "plugins\/lametric\/desktop\/js\/lametric.js": {
+        "Historiser": "Historicize",
+        "Afficher": "Memenitikan",
+        "Visible": "Terlihat",
+        "Inverser": "Membalikkan",
+        "Tester": "Coba"
+    },
+    "plugins\/lametric\/core\/class\/lametric.class.php": {
+        "Message": "Pesan",
+        "ID de l\\'icone": "",
+        "Texte": "Teks",
+        "Vider": "Abisin"
+    }
+}

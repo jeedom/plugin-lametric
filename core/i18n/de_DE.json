@@ -1,0 +1,41 @@
+{
+    "plugins\/lametric\/desktop\/php\/lametric.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Gestion": "Verwaltung",
+        "Ajouter": "Hinzufügen",
+        "Configuration": "Konfiguration",
+        "Mes lametrics": "Meine Lametrik",
+        "Rechercher": "Suchen nach",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Sauvegarder": "Speichern",
+        "Supprimer": "Löschen",
+        "Equipement": "Gerät",
+        "Commandes": "Befehle",
+        "Général": "Allgemein",
+        "Nom de l'équipement lametric": "Name der lametrischen Ausrüstung",
+        "Objet parent": "Übergeordnetes Objekt",
+        "Aucun": "Ohne",
+        "Catégorie": "Kategorie",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
+        "Push URL": "Push-URL",
+        "Token Access": "Token-Zugriff",
+        "Informations": "Information",
+        "Nom": "Name",
+        "Type": "Typ",
+        "Options": "Optionen"
+    },
+    "plugins\/lametric\/desktop\/js\/lametric.js": {
+        "Historiser": "Chronik",
+        "Afficher": "Anzeige",
+        "Visible": "Sichtbar",
+        "Inverser": "Umgekehrt",
+        "Tester": "Test"
+    },
+    "plugins\/lametric\/core\/class\/lametric.class.php": {
+        "Message": "Nachricht",
+        "ID de l\\'icone": "Symbol ID",
+        "Texte": "Text",
+        "Vider": "Leeren"
+    }
+}
