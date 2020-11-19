@@ -37,5 +37,8 @@
         "ID de l\\'icone": "",
         "Texte": "Teks",
         "Vider": "Abisin"
+    },
+    "info.json": {
+        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
     }
 }

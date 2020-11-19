@@ -32,7 +32,7 @@
         "Texte": "Texte",
         "Correspond au texte que l'on souhaite afficher": "Correspond au texte que l'on souhaite afficher",
         "Vider": "Vider",
-        "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors)": "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors)",
+        "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors": "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors",
         "Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère": "Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère",
         "Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi": "Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi"
     }

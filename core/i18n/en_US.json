@@ -37,5 +37,8 @@
         "ID de l\\'icone": "Icon Id",
         "Texte": "Text",
         "Vider": "Clear"
+    },
+    "info.json": {
+        "Plugin permettant d'afficher des notifications sur LaMetric Time": "Plugin to display notifications on LaMetric Time"
     }
 }
