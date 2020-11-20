@@ -12,6 +12,7 @@
         "Equipement": "Cihaz",
         "Commandes": "Komutalar",
         "Général": "Genel",
+        "Nom de l'équipement LaMetric": "",
         "Nom de l'équipement lametric": "",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
@@ -20,7 +21,6 @@
         "Visible": "Görülebilir",
         "Push URL": "",
         "Token Access": "",
-        "Informations": "Bilgiler",
         "Nom": "İsim",
         "Type": "Çeşit",
         "Options": "Opsiyonlar"
@@ -39,6 +39,6 @@
         "Vider": "Boşalt"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
     }
 }

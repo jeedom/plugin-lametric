@@ -12,6 +12,7 @@
         "Equipement": "Dispositivo",
         "Commandes": "Comandi",
         "Général": "Principale",
+        "Nom de l'équipement LaMetric": "",
         "Nom de l'équipement lametric": "",
         "Objet parent": "Oggetto padre",
         "Aucun": "Nessuno",
@@ -20,7 +21,6 @@
         "Visible": "Visibile",
         "Push URL": "URL Push",
         "Token Access": "",
-        "Informations": "Informazioni",
         "Nom": "Nome",
         "Type": "Tipo",
         "Options": "Opzioni"
@@ -39,6 +39,6 @@
         "Vider": "Vuota"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
     }
 }

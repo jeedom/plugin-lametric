@@ -12,6 +12,7 @@
         "Equipement": "設備",
         "Commandes": "コマンド",
         "Général": "コモン",
+        "Nom de l'équipement LaMetric": "",
         "Nom de l'équipement lametric": "",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
@@ -20,7 +21,6 @@
         "Visible": "目に見えます",
         "Push URL": "プッシュURL",
         "Token Access": "",
-        "Informations": "情報",
         "Nom": "表題",
         "Type": "タイプ",
         "Options": "オプション"
@@ -39,6 +39,6 @@
         "Vider": "空"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
     }
 }

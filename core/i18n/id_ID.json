@@ -12,6 +12,7 @@
         "Equipement": "Peralatan",
         "Commandes": "Perintah",
         "Général": "Umum",
+        "Nom de l'équipement LaMetric": "",
         "Nom de l'équipement lametric": "",
         "Objet parent": "Objek induk",
         "Aucun": "Tak ada",
@@ -20,7 +21,6 @@
         "Visible": "Terlihat",
         "Push URL": "Mendorong URL",
         "Token Access": "",
-        "Informations": "Informasi",
         "Nom": "Nama",
         "Type": "Jenis",
         "Options": "Pilihan"
@@ -39,6 +39,6 @@
         "Vider": "Abisin"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
     }
 }
