@@ -12,6 +12,7 @@
         "Equipement": "Оборудование",
         "Commandes": "Команды",
         "Général": "Главная",
+        "Nom de l'équipement LaMetric": "",
         "Nom de l'équipement lametric": "",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
@@ -20,7 +21,6 @@
         "Visible": "Видимый",
         "Push URL": "толчок URL",
         "Token Access": "",
-        "Informations": "Информация",
         "Nom": "Имя",
         "Type": "Тип",
         "Options": "Опции"
@@ -39,6 +39,6 @@
         "Vider": "Пусто"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
     }
 }

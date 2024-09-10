@@ -12,6 +12,7 @@
         "Equipement": "Equipment",
         "Commandes": "Commands",
         "Général": "Main",
+        "Nom de l'équipement LaMetric": "Lametric equipment name",
         "Nom de l'équipement lametric": "Lametric equipment name",
         "Objet parent": "Parent object",
         "Aucun": "None",
@@ -20,7 +21,6 @@
         "Visible": "Visible",
         "Push URL": "Push URL",
         "Token Access": "Access Token",
-        "Informations": "Information",
         "Nom": "Name",
         "Type": "Type",
         "Options": "Options"
@@ -39,6 +39,6 @@
         "Vider": "Clear"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": "Plugin to display notifications on LaMetric Time"
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": "Plugin for displaying notifications on LaMetric Time"
     }
 }

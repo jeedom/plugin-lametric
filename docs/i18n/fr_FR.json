@@ -3,9 +3,13 @@
         "Changelog LaMetric": "Changelog LaMetric",
         "IMPORTANT": "IMPORTANT",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte",
+        "19\/11\/2020": "19\/11\/2020",
+        "Nouvelle présentation de la liste des objets": "Nouvelle présentation de la liste des objets",
+        "Ajout du tag \"Compatibilité V4": "Ajout du tag \"Compatibilité V4",
+        "Mise à jour de l'icône du plugin": "Mise à jour de l'icône du plugin",
         "05\/11\/2019": "05\/11\/2019",
-        "Support jeedom v4": "Support jeedom v4",
-        "Support php 7.3": "Support php 7.3"
+        "Compatibilité Jeedom V4": "Compatibilité Jeedom V4",
+        "Prise en charge de PHP 7.3": "Prise en charge de PHP 7.3"
     },
     "index.md": {
         "Plugin LaMetric": "Plugin LaMetric",
@@ -15,8 +19,10 @@
         "1\\": "1\\",
         "2\\": "2\\",
         "Créer une \"INDICATOR APP": "Créer une \"INDICATOR APP",
+        "Push": "Push",
         "3\\": "3\\",
-        "Configurer une icone, un nom et sélectionner Push dans \"Communication type": "Configurer une icone, un nom et sélectionner Push dans \"Communication type",
+        "Configurer une icône, un nom et sélectionner": "Configurer une icône, un nom et sélectionner",
+        "dans \"Communication type": "dans \"Communication type",
         "4\\": "4\\",
         "Donner un nom et une description à votre app et cocher \"Private app\" puis cliquer sur \"Save": "Donner un nom et une description à votre app et cocher \"Private app\" puis cliquer sur \"Save",
         "5\\": "5\\",
@@ -26,14 +32,15 @@
         "Utilisation du plugin": "Utilisation du plugin",
         "2 commandes sont automatiquement créées lors de l'ajout d'un équipement": "2 commandes sont automatiquement créées lors de l'ajout d'un équipement",
         "Message": "Message",
-        "⇒ Permet l'envoi de messages": "⇒ Permet l'envoi de messages",
+        "Permet l'envoi de messages": "Permet l'envoi de messages",
         "La commande de type message contient 2 champs": "La commande de type message contient 2 champs",
         "ID Icone": "ID Icone",
+        "Correspond au numéro de l'icône souhaitée (Ne pas mettre le  dièse": "Correspond au numéro de l'icône souhaitée (Ne pas mettre le  dièse",
         "Texte": "Texte",
         "Correspond au texte que l'on souhaite afficher": "Correspond au texte que l'on souhaite afficher",
         "Vider": "Vider",
-        "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors": "⇒ Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors",
+        "Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors": "Permet de remettre à vide l'affichage (\"JEEDOM\" s'inscrit alors",
         "Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère": "Il est possible d'envoyer plus de messages en un seul envoi en séparant les icônes et les textes par le caractère",
-        "Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi": "Voici par exemple un scénario envoyant 4 informations différentes en 1 seul envoi"
+        "Voici par exemple un scénario envoyant 4 informations différentes en une seule fois": "Voici par exemple un scénario envoyant 4 informations différentes en une seule fois"
     }
 }

@@ -12,6 +12,7 @@
         "Equipement": "Equipamento",
         "Commandes": "Comandos",
         "Général": "Geral",
+        "Nom de l'équipement LaMetric": "Nome do equipamento lamétrico",
         "Nom de l'équipement lametric": "Nome do equipamento lamétrico",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
@@ -20,7 +21,6 @@
         "Visible": "Visivél",
         "Push URL": "URL impulso",
         "Token Access": "Acesso ao token",
-        "Informations": "Informação",
         "Nom": "Nome",
         "Type": "Tipo",
         "Options": "Opções"
@@ -39,6 +39,6 @@
         "Vider": "Vazio"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time": "Plug-in para exibir notificações no LaMetric Time"
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": "Plugin para exibir notificações no LaMetric Time"
     }
 }
