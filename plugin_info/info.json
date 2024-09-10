@@ -6,7 +6,12 @@
         "en_US": "Plugin for displaying notifications on LaMetric Time",
         "es_ES": "Complemento para mostrar notificaciones en LaMetric Time",
         "de_DE": "Plugin zum Anzeigen von Benachrichtigungen zur LaMetric Time",
-        "pt_PT": "Plugin para exibir notificações no LaMetric Time"
+        "pt_PT": "Plugin para exibir notificações no LaMetric Time",
+        "ru_RU": "Plugin permettant d'afficher des notifications sur LaMetric Time",
+        "id_ID": "Plugin permettant d'afficher des notifications sur LaMetric Time",
+        "it_IT": "Plugin permettant d'afficher des notifications sur LaMetric Time",
+        "ja_JP": "Plugin permettant d'afficher des notifications sur LaMetric Time",
+        "tr": "Plugin permettant d'afficher des notifications sur LaMetric Time"
     },
     "licence": "AGPL",
     "author": "Jeedom SAS",
@@ -34,5 +39,7 @@
         "diy",
         "mobile",
         "v4"
-    ]
+    ],
+    "changelog_beta": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/lametric\/beta\/changelog",
+    "documentation_beta": "https:\/\/doc.jeedom.com\/#language#\/plugins\/communication\/lametric\/beta"
 }

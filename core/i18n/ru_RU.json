@@ -4,7 +4,7 @@
         "Gestion": "Управление",
         "Ajouter": "Добавить",
         "Configuration": "Конфигурация",
-        "Mes lametrics": "",
+        "Mes lametrics": "Mes lametrics",
         "Rechercher": "поиск",
         "Configuration avancée": "Расширенные настройки",
         "Sauvegarder": "Сохранить",
@@ -12,15 +12,15 @@
         "Equipement": "Оборудование",
         "Commandes": "Команды",
         "Général": "Главная",
-        "Nom de l'équipement LaMetric": "",
-        "Nom de l'équipement lametric": "",
+        "Nom de l'équipement LaMetric": "Nom de l'équipement lametric",
+        "Nom de l'équipement lametric": "Nom de l'équipement lametric",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
         "Catégorie": "категория",
         "Activer": "активировать",
         "Visible": "Видимый",
         "Push URL": "толчок URL",
-        "Token Access": "",
+        "Token Access": "Token Access",
         "Nom": "Имя",
         "Type": "Тип",
         "Options": "Опции"
@@ -34,11 +34,11 @@
     },
     "plugins\/lametric\/core\/class\/lametric.class.php": {
         "Message": "Сообщение",
-        "ID de l\\'icone": "",
+        "ID de l\\'icone": "ID de l\\'icone",
         "Texte": "текст",
         "Vider": "Пусто"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": "Plugin permettant d'afficher des notifications sur LaMetric Time"
     }
 }

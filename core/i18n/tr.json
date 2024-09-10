@@ -4,7 +4,7 @@
         "Gestion": "Idare",
         "Ajouter": "Ekle",
         "Configuration": "Ayar",
-        "Mes lametrics": "",
+        "Mes lametrics": "Mes lametrics",
         "Rechercher": "Arayın",
         "Configuration avancée": "Gelişmiş ayarlar",
         "Sauvegarder": "Kaydet",
@@ -12,15 +12,15 @@
         "Equipement": "Cihaz",
         "Commandes": "Komutalar",
         "Général": "Genel",
-        "Nom de l'équipement LaMetric": "",
-        "Nom de l'équipement lametric": "",
+        "Nom de l'équipement LaMetric": "Nom de l'équipement lametric",
+        "Nom de l'équipement lametric": "Nom de l'équipement lametric",
         "Objet parent": "Üst nesne",
         "Aucun": "Hiçbir",
         "Catégorie": "Kategori",
         "Activer": "Etkinleştir",
         "Visible": "Görülebilir",
-        "Push URL": "",
-        "Token Access": "",
+        "Push URL": "Push URL",
+        "Token Access": "Token Access",
         "Nom": "İsim",
         "Type": "Çeşit",
         "Options": "Opsiyonlar"
@@ -34,11 +34,11 @@
     },
     "plugins\/lametric\/core\/class\/lametric.class.php": {
         "Message": "Mesaj",
-        "ID de l\\'icone": "",
+        "ID de l\\'icone": "ID de l\\'icone",
         "Texte": "Metin",
         "Vider": "Boşalt"
     },
     "info.json": {
-        "Plugin permettant d'afficher des notifications sur LaMetric Time.": ""
+        "Plugin permettant d'afficher des notifications sur LaMetric Time.": "Plugin permettant d'afficher des notifications sur LaMetric Time"
     }
 }
