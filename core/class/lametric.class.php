@@ -77,7 +77,7 @@ class lametricCmd extends cmd {
 		));
     	if ($this->type == 'action' && isset($_options['message'])) {
     		$messages = explode('|', $_options['message']);
-    		if(count($messages > 1)){
+    		if(count($messages) > 1){
     			$titles = explode('|', $_options['title']);
     			$i = 0;
     			foreach($messages as $message){
